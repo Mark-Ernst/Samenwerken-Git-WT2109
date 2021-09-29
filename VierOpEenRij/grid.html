@@ -6,8 +6,17 @@
     </head>
     <body onload="tableCreate()">
         <div class="container">
-            <span class="header">Speler <span class="player"></span> is aan de beurt!</span>
-            <div class="board"></div>
+            <div>
+                <label for="player1-name">Naam speler 1:</label>
+                <input type='text' id='player1-name'><button onclick="setName()">Opslaan</button>
+            </div>
+            <div>
+                <label for="player2-name">Naam speler 2:</label>
+                <input type='text' id='player2-name'><button onclick="setName()">Opslaan</button>
+            </div>
+            <p id="player">Rood is aan de beurt!</p>
+            <div id="board"></div>
+            <button onclick="resetGame()">Reset game</button>
         </div>
     </body>
 </html>
